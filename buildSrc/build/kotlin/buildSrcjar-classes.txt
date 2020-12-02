@@ -1,0 +1,1 @@
+/Users/krystianrybarczyk/IdeaProjects/artconnect/code/jooq-in-gradle/buildSrc/build/classes/kotlin/main/Versions.class

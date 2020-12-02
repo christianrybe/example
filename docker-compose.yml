@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:12.3
+    restart: on-failure
+    environment:
+      POSTGRES_HOST_AUTH_METHOD: trust
+      POSTGRES_USER: docker
+      POSTGRES_DB: example
+    ports:
+      - "5432:5432"
+    networks:
+      example-network:
+        aliases:
+          - postgres
+
+networks:
+  example-network:
